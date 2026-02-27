@@ -1,0 +1,53 @@
+.toolbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.toolbar-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex: 1;
+}
+
+.search-field {
+  flex: 1;
+  max-width: 400px;
+}
+
+.category-field {
+  min-width: 180px;
+}
+
+.add-btn {
+  font-weight: 500;
+  padding: 0 24px;
+  height: 48px;
+  border-radius: 24px !important;
+  font-size: 0.95rem;
+
+  mat-icon {
+    margin-right: 4px;
+  }
+}
+
+@media (max-width: 768px) {
+  .toolbar-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .toolbar-left {
+    flex-direction: column;
+  }
+
+  .search-field,
+  .category-field {
+    max-width: none;
+    width: 100%;
+  }
+}

@@ -1,0 +1,37 @@
+<div class="activity-panel" [class.open]="isOpen">
+  <div class="panel-header gradient-bg" (click)="toggle()">
+    <div class="header-left">
+      <mat-icon>history</mat-icon>
+      <span>Activity Log</span>
+    </div>
+    <mat-icon class="toggle-icon">{{ isOpen ? 'expand_more' : 'expand_less' }}</mat-icon>
+  </div>
+
+  @if (isOpen) {
+    <div class="panel-body">
+      @if (activities.length === 0) {
+        <div class="empty-activity">
+          <mat-icon>event_note</mat-icon>
+          <p>No recent activity</p>
+        </div>
+      } @else {
+        @for (entry of activities; track entry.id) {
+          <div class="activity-entry">
+            <mat-icon [style.color]="getActionColor(entry.action)" class="action-icon">
+              {{ getActionIcon(entry.action) }}
+            </mat-icon>
+            <div class="entry-details">
+              <span class="entry-text">
+                {{ entry.action === 'CREATED' ? 'Created' : entry.action === 'UPDATED' ? 'Updated' : 'Deleted' }}
+                <strong>{{ entry.itemName }}</strong>
+                <span class="entry-sku">({{ entry.itemSku }})</span>
+              </span>
+              <span class="entry-time">{{ entry.timestamp | date:'short' }}</span>
+            </div>
+          </div>
+          <mat-divider></mat-divider>
+        }
+      }
+    </div>
+  }
+</div>

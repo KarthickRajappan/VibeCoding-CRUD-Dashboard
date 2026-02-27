@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "action": "CREATED",
+    "itemName": "Wireless Earbuds Pro",
+    "itemSku": "ELEC-004",
+    "details": null,
+    "timestamp": "2026-02-26T16:00:00.000Z"
+  },
+  {
+    "id": 2,
+    "action": "UPDATED",
+    "itemName": "Cotton Crew Neck T-Shirt",
+    "itemSku": "CLTH-001",
+    "details": "{\"quantity\": \"100 → 120\"}",
+    "timestamp": "2026-02-25T09:30:00.000Z"
+  },
+  {
+    "id": 3,
+    "action": "DELETED",
+    "itemName": "Old Headphones",
+    "itemSku": "ELEC-OLD",
+    "details": null,
+    "timestamp": "2026-02-24T14:00:00.000Z"
+  },
+  {
+    "id": 4,
+    "action": "CREATED",
+    "itemName": "Car Phone Mount Universal",
+    "itemSku": "AUTO-001",
+    "details": null,
+    "timestamp": "2026-02-23T10:00:00.000Z"
+  },
+  {
+    "id": 5,
+    "action": "UPDATED",
+    "itemName": "Yoga Mat Premium 6mm",
+    "itemSku": "SPRT-001",
+    "details": "{\"price\": \"34.99 → 39.99\"}",
+    "timestamp": "2026-02-22T11:00:00.000Z"
+  },
+  {
+    "id": 6,
+    "action": "UPDATED",
+    "itemName": "USB-C Charging Cable",
+    "itemSku": "ELEC-002",
+    "details": "{\"quantity\": \"15 → 0\"}",
+    "timestamp": "2026-02-21T08:00:00.000Z"
+  },
+  {
+    "id": 7,
+    "action": "CREATED",
+    "itemName": "Building Blocks 500pc",
+    "itemSku": "TOYS-001",
+    "details": null,
+    "timestamp": "2026-02-20T12:30:00.000Z"
+  },
+  {
+    "id": 8,
+    "action": "UPDATED",
+    "itemName": "Mechanical Keyboard RGB",
+    "itemSku": "ELEC-003",
+    "details": "{\"quantity\": \"20 → 7\"}",
+    "timestamp": "2026-02-19T16:45:00.000Z"
+  }
+]

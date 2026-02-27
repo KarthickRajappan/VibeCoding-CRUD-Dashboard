@@ -1,0 +1,104 @@
+.table-container {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.inventory-table {
+  width: 100%;
+}
+
+th.mat-header-cell {
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #0D47A1;
+  padding: 16px;
+}
+
+td.mat-cell {
+  padding: 12px 16px;
+  font-size: 0.9rem;
+}
+
+.product-name {
+  font-weight: 500;
+  color: #1a1a1a;
+}
+
+.sku-badge {
+  display: inline-block;
+  background: #E3F2FD;
+  color: #1565C0;
+  padding: 2px 10px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.quantity-cell {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.stock-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.badge-warning {
+  background: #FFF3E0;
+  color: #E65100;
+}
+
+.badge-danger {
+  background: #FFEBEE;
+  color: #C62828;
+}
+
+.actions-header {
+  text-align: center;
+}
+
+.actions-cell {
+  text-align: center;
+  white-space: nowrap;
+}
+
+.table-footer {
+  padding: 12px 16px;
+  border-top: 1px solid #E0E0E0;
+  background: #FAFAFA;
+}
+
+.item-count {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.empty-state {
+  padding: 48px 0;
+  text-align: center;
+  color: #999;
+}
+
+.empty-icon {
+  font-size: 48px;
+  width: 48px;
+  height: 48px;
+  color: #ccc;
+}
+
+.no-data-cell {
+  text-align: center;
+}
+
+tr.mat-mdc-row:hover {
+  background-color: #F5F5F5;
+}

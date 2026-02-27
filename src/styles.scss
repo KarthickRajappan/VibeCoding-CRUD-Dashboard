@@ -1,0 +1,128 @@
+@use '@angular/material' as mat;
+
+html {
+  height: 100%;
+  @include mat.theme(
+    (
+      color: (
+        primary: mat.$blue-palette,
+        tertiary: mat.$cyan-palette,
+      ),
+      typography: Roboto,
+      density: 0,
+    )
+  );
+}
+
+body {
+  color-scheme: light;
+  background-color: #f5f7fa;
+  color: var(--mat-sys-on-surface);
+  font: var(--mat-sys-body-medium);
+  margin: 0;
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* ============================================
+   GRADIENT UTILITIES — Blue & White Theme
+   ============================================ */
+
+/* Primary blue gradient — for toolbars, headers */
+.gradient-bg {
+  background: linear-gradient(135deg, #1565C0 0%, #0D47A1 100%) !important;
+  color: white !important;
+}
+
+/* Lighter blue gradient — for cards, panels */
+.gradient-card {
+  background: linear-gradient(135deg, #E3F2FD 0%, #BBDEFB 50%, #E3F2FD 100%) !important;
+}
+
+/* Blue button gradient */
+.gradient-btn {
+  background: linear-gradient(135deg, #1976D2 0%, #1565C0 50%, #0D47A1 100%) !important;
+  color: white !important;
+  border: none !important;
+  transition: all 0.3s ease;
+}
+.gradient-btn:hover {
+  background: linear-gradient(135deg, #1E88E5 0%, #1976D2 50%, #1565C0 100%) !important;
+  box-shadow: 0 4px 12px rgba(21, 101, 192, 0.4) !important;
+}
+
+/* Stat card gradients */
+.gradient-stat-blue {
+  background: linear-gradient(135deg, #1565C0 0%, #42A5F5 100%) !important;
+  color: white !important;
+}
+.gradient-stat-amber {
+  background: linear-gradient(135deg, #F57F17 0%, #FBC02D 100%) !important;
+  color: white !important;
+}
+.gradient-stat-red {
+  background: linear-gradient(135deg, #C62828 0%, #E53935 100%) !important;
+  color: white !important;
+}
+
+/* Table header gradient */
+.gradient-table-header {
+  background: linear-gradient(135deg, #E3F2FD 0%, #BBDEFB 100%) !important;
+}
+
+/* Dialog header gradient */
+.gradient-dialog-header {
+  background: linear-gradient(135deg, #1565C0 0%, #0D47A1 100%);
+  color: white;
+  padding: 16px 24px;
+  margin: -24px -24px 16px -24px;
+}
+
+/* ============================================
+   LOW STOCK / OUT OF STOCK ROW HIGHLIGHTING
+   ============================================ */
+.low-stock-row {
+  background-color: #FFF8E1 !important;
+  border-left: 4px solid #FBC02D !important;
+}
+
+.out-of-stock-row {
+  background-color: #FFEBEE !important;
+  border-left: 4px solid #E53935 !important;
+}
+
+/* ============================================
+   GLOBAL UTILITIES
+   ============================================ */
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.mt-1 { margin-top: 8px; }
+.mt-2 { margin-top: 16px; }
+.mt-3 { margin-top: 24px; }
+.mb-1 { margin-bottom: 8px; }
+.mb-2 { margin-bottom: 16px; }
+.mb-3 { margin-bottom: 24px; }
+.p-2 { padding: 16px; }
+.p-3 { padding: 24px; }
+
+/* Card shadow utility */
+.card-elevated {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08), 0 4px 16px rgba(0, 0, 0, 0.04) !important;
+  border-radius: 12px !important;
+}
+
+/* Snackbar error class */
+.error-snackbar {
+  --mdc-snackbar-container-color: #E53935;
+  --mdc-snackbar-supporting-text-color: white;
+}
+
+/* Smooth transitions on interactive elements */
+mat-card, button, mat-row {
+  transition: all 0.2s ease;
+}
+
+mat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}

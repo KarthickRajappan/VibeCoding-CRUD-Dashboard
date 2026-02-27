@@ -1,0 +1,34 @@
+.charts-section {
+  margin-top: 24px;
+}
+
+.toggle-btn {
+  margin-bottom: 16px;
+  border-radius: 20px !important;
+
+  mat-icon {
+    margin-right: 4px;
+  }
+}
+
+.charts-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.chart-card {
+  border-radius: 12px !important;
+  overflow: hidden;
+}
+
+.chart-wrapper {
+  height: 300px;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .charts-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,43 @@
+<div class="stats-container">
+  <mat-card class="stat-card gradient-stat-blue card-elevated">
+    <mat-card-content>
+      <div class="stat-content">
+        <div class="stat-icon">
+          <mat-icon>inventory_2</mat-icon>
+        </div>
+        <div class="stat-info">
+          <span class="stat-value">{{ stats.totalItems }}</span>
+          <span class="stat-label">Total Items</span>
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card class="stat-card gradient-stat-amber card-elevated">
+    <mat-card-content>
+      <div class="stat-content">
+        <div class="stat-icon">
+          <mat-icon>warning</mat-icon>
+        </div>
+        <div class="stat-info">
+          <span class="stat-value">{{ stats.lowStockItems }}</span>
+          <span class="stat-label">Low Stock</span>
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card class="stat-card gradient-stat-red card-elevated">
+    <mat-card-content>
+      <div class="stat-content">
+        <div class="stat-icon">
+          <mat-icon>error</mat-icon>
+        </div>
+        <div class="stat-info">
+          <span class="stat-value">{{ stats.outOfStockItems }}</span>
+          <span class="stat-label">Out of Stock</span>
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>

@@ -1,0 +1,222 @@
+[
+  {
+    "id": "a1b2c3d4-1001-4000-8000-000000000001",
+    "name": "Wireless Bluetooth Mouse",
+    "sku": "ELEC-001",
+    "category": "Electronics",
+    "price": 29.99,
+    "quantity": 45,
+    "imageUrl": null,
+    "createdAt": "2026-01-15T09:00:00.000Z",
+    "updatedAt": "2026-02-20T14:30:00.000Z"
+  },
+  {
+    "id": "a1b2c3d4-1001-4000-8000-000000000002",
+    "name": "USB-C Charging Cable",
+    "sku": "ELEC-002",
+    "category": "Electronics",
+    "price": 12.99,
+    "quantity": 0,
+    "imageUrl": null,
+    "createdAt": "2026-01-16T10:00:00.000Z",
+    "updatedAt": "2026-02-18T11:00:00.000Z"
+  },
+  {
+    "id": "a1b2c3d4-1001-4000-8000-000000000003",
+    "name": "Mechanical Keyboard RGB",
+    "sku": "ELEC-003",
+    "category": "Electronics",
+    "price": 89.99,
+    "quantity": 7,
+    "imageUrl": null,
+    "createdAt": "2026-01-17T08:30:00.000Z",
+    "updatedAt": "2026-02-19T16:45:00.000Z"
+  },
+  {
+    "id": "a1b2c3d4-1001-4000-8000-000000000004",
+    "name": "Cotton Crew Neck T-Shirt",
+    "sku": "CLTH-001",
+    "category": "Clothing",
+    "price": 19.99,
+    "quantity": 120,
+    "imageUrl": null,
+    "createdAt": "2026-01-18T07:00:00.000Z",
+    "updatedAt": "2026-02-15T09:30:00.000Z"
+  },
+  {
+    "id": "a1b2c3d4-1001-4000-8000-000000000005",
+    "name": "Denim Slim Fit Jeans",
+    "sku": "CLTH-002",
+    "category": "Clothing",
+    "price": 49.99,
+    "quantity": 3,
+    "imageUrl": null,
+    "createdAt": "2026-01-19T11:00:00.000Z",
+    "updatedAt": "2026-02-22T10:00:00.000Z"
+  },
+  {
+    "id": "a1b2c3d4-1001-4000-8000-000000000006",
+    "name": "Organic Green Tea Box",
+    "sku": "FOOD-001",
+    "category": "Food & Beverage",
+    "price": 8.49,
+    "quantity": 200,
+    "imageUrl": null,
+    "createdAt": "2026-01-20T06:00:00.000Z",
+    "updatedAt": "2026-02-25T08:00:00.000Z"
+  },
+  {
+    "id": "a1b2c3d4-1001-4000-8000-000000000007",
+    "name": "Premium Coffee Beans 1kg",
+    "sku": "FOOD-002",
+    "category": "Food & Beverage",
+    "price": 24.99,
+    "quantity": 0,
+    "imageUrl": null,
+    "createdAt": "2026-01-21T13:00:00.000Z",
+    "updatedAt": "2026-02-24T15:00:00.000Z"
+  },
+  {
+    "id": "a1b2c3d4-1001-4000-8000-000000000008",
+    "name": "Indoor Plant Pot Set",
+    "sku": "HOME-001",
+    "category": "Home & Garden",
+    "price": 34.99,
+    "quantity": 18,
+    "imageUrl": null,
+    "createdAt": "2026-01-22T09:30:00.000Z",
+    "updatedAt": "2026-02-21T12:00:00.000Z"
+  },
+  {
+    "id": "a1b2c3d4-1001-4000-8000-000000000009",
+    "name": "LED Desk Lamp Adjustable",
+    "sku": "HOME-002",
+    "category": "Home & Garden",
+    "price": 42.99,
+    "quantity": 5,
+    "imageUrl": null,
+    "createdAt": "2026-01-23T14:00:00.000Z",
+    "updatedAt": "2026-02-20T18:00:00.000Z"
+  },
+  {
+    "id": "a1b2c3d4-1001-4000-8000-000000000010",
+    "name": "Yoga Mat Premium 6mm",
+    "sku": "SPRT-001",
+    "category": "Sports & Outdoors",
+    "price": 39.99,
+    "quantity": 25,
+    "imageUrl": null,
+    "createdAt": "2026-01-24T07:30:00.000Z",
+    "updatedAt": "2026-02-18T10:30:00.000Z"
+  },
+  {
+    "id": "a1b2c3d4-1001-4000-8000-000000000011",
+    "name": "Resistance Bands Set",
+    "sku": "SPRT-002",
+    "category": "Sports & Outdoors",
+    "price": 15.99,
+    "quantity": 8,
+    "imageUrl": null,
+    "createdAt": "2026-01-25T10:00:00.000Z",
+    "updatedAt": "2026-02-23T11:00:00.000Z"
+  },
+  {
+    "id": "a1b2c3d4-1001-4000-8000-000000000012",
+    "name": "Hardcover Notebook A5",
+    "sku": "BOOK-001",
+    "category": "Books & Stationery",
+    "price": 14.99,
+    "quantity": 65,
+    "imageUrl": null,
+    "createdAt": "2026-01-26T08:00:00.000Z",
+    "updatedAt": "2026-02-17T09:00:00.000Z"
+  },
+  {
+    "id": "a1b2c3d4-1001-4000-8000-000000000013",
+    "name": "Gel Pen Set 12-Pack",
+    "sku": "BOOK-002",
+    "category": "Books & Stationery",
+    "price": 9.99,
+    "quantity": 0,
+    "imageUrl": null,
+    "createdAt": "2026-01-27T12:00:00.000Z",
+    "updatedAt": "2026-02-26T14:00:00.000Z"
+  },
+  {
+    "id": "a1b2c3d4-1001-4000-8000-000000000014",
+    "name": "Vitamin C Serum 30ml",
+    "sku": "HLTH-001",
+    "category": "Health & Beauty",
+    "price": 22.99,
+    "quantity": 35,
+    "imageUrl": null,
+    "createdAt": "2026-01-28T15:00:00.000Z",
+    "updatedAt": "2026-02-19T17:00:00.000Z"
+  },
+  {
+    "id": "a1b2c3d4-1001-4000-8000-000000000015",
+    "name": "Sunscreen SPF 50",
+    "sku": "HLTH-002",
+    "category": "Health & Beauty",
+    "price": 16.99,
+    "quantity": 2,
+    "imageUrl": null,
+    "createdAt": "2026-01-29T09:00:00.000Z",
+    "updatedAt": "2026-02-22T13:00:00.000Z"
+  },
+  {
+    "id": "a1b2c3d4-1001-4000-8000-000000000016",
+    "name": "Building Blocks 500pc",
+    "sku": "TOYS-001",
+    "category": "Toys & Games",
+    "price": 34.99,
+    "quantity": 15,
+    "imageUrl": null,
+    "createdAt": "2026-01-30T11:30:00.000Z",
+    "updatedAt": "2026-02-21T16:30:00.000Z"
+  },
+  {
+    "id": "a1b2c3d4-1001-4000-8000-000000000017",
+    "name": "Strategy Board Game",
+    "sku": "TOYS-002",
+    "category": "Toys & Games",
+    "price": 44.99,
+    "quantity": 0,
+    "imageUrl": null,
+    "createdAt": "2026-02-01T08:00:00.000Z",
+    "updatedAt": "2026-02-25T10:00:00.000Z"
+  },
+  {
+    "id": "a1b2c3d4-1001-4000-8000-000000000018",
+    "name": "Car Phone Mount Universal",
+    "sku": "AUTO-001",
+    "category": "Automotive",
+    "price": 18.99,
+    "quantity": 30,
+    "imageUrl": null,
+    "createdAt": "2026-02-02T10:00:00.000Z",
+    "updatedAt": "2026-02-20T12:00:00.000Z"
+  },
+  {
+    "id": "a1b2c3d4-1001-4000-8000-000000000019",
+    "name": "Microfiber Cleaning Cloths 6pk",
+    "sku": "AUTO-002",
+    "category": "Automotive",
+    "price": 11.99,
+    "quantity": 9,
+    "imageUrl": null,
+    "createdAt": "2026-02-03T07:00:00.000Z",
+    "updatedAt": "2026-02-24T09:00:00.000Z"
+  },
+  {
+    "id": "a1b2c3d4-1001-4000-8000-000000000020",
+    "name": "Wireless Earbuds Pro",
+    "sku": "ELEC-004",
+    "category": "Electronics",
+    "price": 59.99,
+    "quantity": 22,
+    "imageUrl": null,
+    "createdAt": "2026-02-05T14:00:00.000Z",
+    "updatedAt": "2026-02-26T16:00:00.000Z"
+  }
+]

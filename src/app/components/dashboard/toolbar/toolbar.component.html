@@ -1,0 +1,43 @@
+<div class="toolbar-container">
+  <div class="toolbar-left">
+    <mat-form-field appearance="outline" class="search-field">
+      <mat-label>Search inventory...</mat-label>
+      <input
+        matInput
+        [(ngModel)]="searchTerm"
+        (ngModelChange)="onSearchChange()"
+        placeholder="Search by name, SKU, or category"
+      />
+      <mat-icon matPrefix>search</mat-icon>
+      @if (searchTerm) {
+        <button matSuffix mat-icon-button (click)="clearSearch()">
+          <mat-icon>close</mat-icon>
+        </button>
+      }
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="category-field">
+      <mat-label>Category</mat-label>
+      <mat-select
+        [(ngModel)]="selectedCategory"
+        (ngModelChange)="onCategoryChange()"
+      >
+        <mat-option value="">All Categories</mat-option>
+        @for (cat of categories; track cat) {
+          <mat-option [value]="cat">{{ cat }}</mat-option>
+        }
+      </mat-select>
+    </mat-form-field>
+  </div>
+
+  <div class="toolbar-right">
+    <button
+      mat-raised-button
+      class="gradient-btn add-btn"
+      (click)="onAddItem()"
+    >
+      <mat-icon>add</mat-icon>
+      Add Item
+    </button>
+  </div>
+</div>

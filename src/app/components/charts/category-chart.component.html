@@ -1,0 +1,36 @@
+<div class="charts-section">
+  <button mat-stroked-button color="primary" (click)="toggleCharts()" class="toggle-btn">
+    <mat-icon>{{ showCharts ? 'expand_less' : 'bar_chart' }}</mat-icon>
+    {{ showCharts ? 'Hide Analytics' : 'Show Analytics' }}
+  </button>
+
+  @if (showCharts) {
+    <div class="charts-grid">
+      <mat-card class="chart-card card-elevated">
+        <mat-card-content>
+          <div class="chart-wrapper">
+            <canvas
+              baseChart
+              [type]="barChartType"
+              [data]="barChartData"
+              [options]="barChartOptions"
+            ></canvas>
+          </div>
+        </mat-card-content>
+      </mat-card>
+
+      <mat-card class="chart-card card-elevated">
+        <mat-card-content>
+          <div class="chart-wrapper">
+            <canvas
+              baseChart
+              [type]="pieChartType"
+              [data]="pieChartData"
+              [options]="pieChartOptions"
+            ></canvas>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  }
+</div>

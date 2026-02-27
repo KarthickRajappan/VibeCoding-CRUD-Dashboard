@@ -1,0 +1,52 @@
+.dialog-wrapper {
+  min-width: 400px;
+}
+
+.gradient-dialog-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: linear-gradient(135deg, #1565C0 0%, #0D47A1 100%);
+  color: white;
+  padding: 20px 24px;
+  margin: -24px -24px 24px -24px;
+  border-radius: 4px 4px 0 0;
+
+  h2 {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
+
+  mat-icon {
+    font-size: 28px;
+    width: 28px;
+    height: 28px;
+  }
+}
+
+.item-form {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.price-prefix {
+  font-weight: 500;
+  color: #666;
+}
+
+mat-dialog-actions {
+  padding: 16px 0 0 0;
+  gap: 8px;
+}

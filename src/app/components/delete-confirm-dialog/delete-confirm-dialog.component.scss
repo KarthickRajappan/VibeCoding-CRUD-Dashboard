@@ -1,0 +1,48 @@
+.dialog-wrapper {
+  min-width: 350px;
+}
+
+.delete-dialog-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: linear-gradient(135deg, #C62828 0%, #E53935 100%);
+  color: white;
+  padding: 20px 24px;
+  margin: -24px -24px 24px -24px;
+  border-radius: 4px 4px 0 0;
+
+  h2 {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
+
+  mat-icon {
+    font-size: 28px;
+    width: 28px;
+    height: 28px;
+  }
+}
+
+.delete-message {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+
+  .sku {
+    color: #1565C0;
+    font-weight: 500;
+  }
+}
+
+.delete-warning {
+  font-size: 0.85rem;
+  color: #999;
+  margin-top: 8px;
+}
+
+mat-dialog-actions {
+  padding: 16px 0 0 0;
+  gap: 8px;
+}

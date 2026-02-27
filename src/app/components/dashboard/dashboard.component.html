@@ -1,0 +1,17 @@
+<div class="dashboard-container">
+  <app-stats-header [stats]="stats"></app-stats-header>
+
+  <app-toolbar
+    (searchChange)="onSearchChange($event)"
+    (categoryChange)="onCategoryChange($event)"
+    (addItem)="onAddItem()"
+  ></app-toolbar>
+
+  <app-inventory-table
+    [items]="items"
+    (editItem)="onEditItem($event)"
+    (deleteItem)="onDeleteItem($event)"
+  ></app-inventory-table>
+
+  <app-category-chart [items]="items"></app-category-chart>
+</div>

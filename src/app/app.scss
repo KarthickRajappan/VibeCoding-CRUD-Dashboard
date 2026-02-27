@@ -1,0 +1,55 @@
+.app-toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.toolbar-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.toolbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-icon {
+  font-size: 32px;
+  width: 32px;
+  height: 32px;
+}
+
+.brand-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.toolbar-subtitle {
+  font-size: 0.85rem;
+  opacity: 0.8;
+  font-weight: 300;
+}
+
+.main-content {
+  min-height: calc(100vh - 64px);
+  background: linear-gradient(180deg, #E3F2FD 0%, #F5F5F5 30%, #FAFAFA 100%);
+  padding-top: 8px;
+}
+
+@media (max-width: 768px) {
+  .toolbar-subtitle {
+    display: none;
+  }
+
+  .brand-title {
+    font-size: 1.1rem;
+  }
+}
