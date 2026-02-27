@@ -1,0 +1,13 @@
+@if (showBanner) {
+  <div class="alert-banner" [class.danger]="bannerType === 'danger'" [class.warning]="bannerType === 'warning'">
+    <div class="banner-content">
+      <mat-icon class="banner-icon">{{ bannerType === 'danger' ? 'error' : 'warning' }}</mat-icon>
+      <span class="banner-text">
+        <strong>Stock Alert:</strong> {{ bannerMessage }}. Review your inventory and reorder soon.
+      </span>
+    </div>
+    <button mat-icon-button class="dismiss-btn" (click)="dismiss()" aria-label="Dismiss alert">
+      <mat-icon>close</mat-icon>
+    </button>
+  </div>
+}

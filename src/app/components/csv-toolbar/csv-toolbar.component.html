@@ -1,0 +1,38 @@
+<div class="csv-actions">
+  <button
+    mat-stroked-button
+    class="csv-btn"
+    (click)="onExport()"
+    matTooltip="Export all current items as CSV"
+  >
+    <mat-icon>download</mat-icon>
+    Export
+  </button>
+
+  <button
+    mat-stroked-button
+    class="csv-btn"
+    (click)="fileInput.click()"
+    matTooltip="Import items from a CSV file"
+  >
+    <mat-icon>upload</mat-icon>
+    Import
+  </button>
+
+  <button
+    mat-icon-button
+    class="template-btn"
+    (click)="onDownloadTemplate()"
+    matTooltip="Download CSV template"
+  >
+    <mat-icon>help_outline</mat-icon>
+  </button>
+
+  <input
+    #fileInput
+    type="file"
+    accept=".csv"
+    style="display:none"
+    (change)="onFileSelected($event, fileInput)"
+  />
+</div>

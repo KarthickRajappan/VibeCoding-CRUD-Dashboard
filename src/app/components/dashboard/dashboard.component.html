@@ -1,17 +1,40 @@
 <div class="dashboard-container">
+  <!-- Low Stock Alert Banner -->
+  <app-low-stock-banner [stats]="stats"></app-low-stock-banner>
+
+  <!-- Stats Cards -->
   <app-stats-header [stats]="stats"></app-stats-header>
 
+  <!-- Search, Filter, Add Toolbar -->
   <app-toolbar
+    [canCreate]="authService.canCreate()"
     (searchChange)="onSearchChange($event)"
     (categoryChange)="onCategoryChange($event)"
+    (stockFilterChange)="onStockFilterChange($event)"
     (addItem)="onAddItem()"
   ></app-toolbar>
 
+  <!-- CSV Import / Export (admin only) -->
+  @if (authService.canExport()) {
+    <div class="csv-row">
+      <app-csv-toolbar
+        [items]="allItems"
+        (importItems)="onImportItems($event)"
+        (importError)="onImportError($event)"
+      ></app-csv-toolbar>
+    </div>
+  }
+
+  <!-- Inventory Table with bulk delete + role-gated actions -->
   <app-inventory-table
     [items]="items"
+    [canEdit]="authService.canEdit()"
+    [canDelete]="authService.canDelete()"
     (editItem)="onEditItem($event)"
     (deleteItem)="onDeleteItem($event)"
+    (bulkDeleteItems)="onBulkDelete($event)"
   ></app-inventory-table>
 
-  <app-category-chart [items]="items"></app-category-chart>
+  <!-- Analytics Charts (collapsible) -->
+  <app-category-chart [items]="allItems"></app-category-chart>
 </div>

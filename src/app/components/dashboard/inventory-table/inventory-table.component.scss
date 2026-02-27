@@ -1,3 +1,50 @@
+/* Bulk action bar */
+.bulk-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 16px;
+  background: linear-gradient(135deg, #E3F2FD 0%, #BBDEFB 100%);
+  border-radius: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #90CAF9;
+}
+
+.bulk-count {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #1565C0;
+  flex: 1;
+}
+
+.bulk-delete-btn {
+  mat-icon { margin-right: 4px; }
+}
+
+/* Checkbox column */
+.checkbox-header {
+  width: 48px;
+  padding-left: 8px !important;
+}
+
+.viewer-badge {
+  font-size: 0.75rem;
+  color: #999;
+  font-style: italic;
+}
+
+.qty-zero {
+  color: #E53935;
+  font-weight: 600;
+}
+
+.empty-sub {
+  font-size: 0.8rem;
+  color: #bbb;
+  display: block;
+  margin-top: 4px;
+}
+
 .table-container {
   background: white;
   border-radius: 12px;

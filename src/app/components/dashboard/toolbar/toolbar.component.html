@@ -1,43 +1,74 @@
 <div class="toolbar-container">
-  <div class="toolbar-left">
-    <mat-form-field appearance="outline" class="search-field">
-      <mat-label>Search inventory...</mat-label>
-      <input
-        matInput
-        [(ngModel)]="searchTerm"
-        (ngModelChange)="onSearchChange()"
-        placeholder="Search by name, SKU, or category"
-      />
-      <mat-icon matPrefix>search</mat-icon>
-      @if (searchTerm) {
-        <button matSuffix mat-icon-button (click)="clearSearch()">
-          <mat-icon>close</mat-icon>
+  <!-- Row 1: Search + Category + Add Button -->
+  <div class="toolbar-row">
+    <div class="toolbar-left">
+      <mat-form-field appearance="outline" class="search-field">
+        <mat-label>Search inventory...</mat-label>
+        <input
+          matInput
+          [(ngModel)]="searchTerm"
+          (ngModelChange)="onSearchChange()"
+          placeholder="Name, SKU, or category"
+        />
+        <mat-icon matPrefix>search</mat-icon>
+        @if (searchTerm) {
+          <button matSuffix mat-icon-button (click)="clearSearch()">
+            <mat-icon>close</mat-icon>
+          </button>
+        }
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="category-field">
+        <mat-label>Category</mat-label>
+        <mat-select [(ngModel)]="selectedCategory" (ngModelChange)="onCategoryChange()">
+          <mat-option value="">All Categories</mat-option>
+          @for (cat of categories; track cat) {
+            <mat-option [value]="cat">{{ cat }}</mat-option>
+          }
+        </mat-select>
+      </mat-form-field>
+    </div>
+
+    <div class="toolbar-right">
+      @if (hasActiveFilters) {
+        <button mat-button class="clear-btn" (click)="clearFilters()" matTooltip="Clear all filters">
+          <mat-icon>filter_alt_off</mat-icon>
+          Clear
         </button>
       }
-    </mat-form-field>
-
-    <mat-form-field appearance="outline" class="category-field">
-      <mat-label>Category</mat-label>
-      <mat-select
-        [(ngModel)]="selectedCategory"
-        (ngModelChange)="onCategoryChange()"
-      >
-        <mat-option value="">All Categories</mat-option>
-        @for (cat of categories; track cat) {
-          <mat-option [value]="cat">{{ cat }}</mat-option>
-        }
-      </mat-select>
-    </mat-form-field>
+      @if (canCreate) {
+        <button mat-raised-button class="gradient-btn add-btn" (click)="onAddItem()">
+          <mat-icon>add</mat-icon>
+          Add Item
+        </button>
+      }
+    </div>
   </div>
 
-  <div class="toolbar-right">
-    <button
-      mat-raised-button
-      class="gradient-btn add-btn"
-      (click)="onAddItem()"
+  <!-- Row 2: Stock Status Filter Chips -->
+  <div class="filter-row">
+    <span class="filter-label">Stock:</span>
+    <mat-button-toggle-group
+      [value]="stockFilter"
+      (change)="onStockFilterChange($event.value)"
+      class="stock-filter-group"
     >
-      <mat-icon>add</mat-icon>
-      Add Item
-    </button>
+      <mat-button-toggle value="">
+        <mat-icon>list</mat-icon>
+        All
+      </mat-button-toggle>
+      <mat-button-toggle value="healthy" class="healthy-toggle" matTooltip="Qty ≥ 10">
+        <mat-icon>check_circle</mat-icon>
+        In Stock
+      </mat-button-toggle>
+      <mat-button-toggle value="low" class="low-toggle" matTooltip="Qty 1–9">
+        <mat-icon>warning</mat-icon>
+        Low Stock
+      </mat-button-toggle>
+      <mat-button-toggle value="out" class="out-toggle" matTooltip="Qty = 0">
+        <mat-icon>error</mat-icon>
+        Out of Stock
+      </mat-button-toggle>
+    </mat-button-toggle-group>
   </div>
 </div>

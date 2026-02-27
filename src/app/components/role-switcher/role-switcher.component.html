@@ -1,0 +1,17 @@
+<div class="role-switcher">
+  <span class="role-label">Role:</span>
+  <mat-button-toggle-group
+    [value]="authService.currentUser().role"
+    (change)="onRoleChange($event.value)"
+    class="role-toggle"
+  >
+    <mat-button-toggle value="admin" matTooltip="Full access: create, edit, delete">
+      <mat-icon>admin_panel_settings</mat-icon>
+      <span class="role-name">Admin</span>
+    </mat-button-toggle>
+    <mat-button-toggle value="viewer" matTooltip="Read-only access">
+      <mat-icon>visibility</mat-icon>
+      <span class="role-name">Viewer</span>
+    </mat-button-toggle>
+  </mat-button-toggle-group>
+</div>

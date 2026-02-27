@@ -4,6 +4,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ActivityPanelComponent } from './components/activity-log/activity-panel.component';
+import { RoleSwitcherComponent } from './components/role-switcher/role-switcher.component';
 
 @Component({
   selector: 'app-root',
@@ -14,6 +15,7 @@ import { ActivityPanelComponent } from './components/activity-log/activity-panel
     MatButtonModule,
     DashboardComponent,
     ActivityPanelComponent,
+    RoleSwitcherComponent,
   ],
   templateUrl: './app.html',
   styleUrl: './app.scss',
